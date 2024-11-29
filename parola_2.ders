@@ -1,0 +1,13 @@
+import random
+
+karakter = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+
+uzunluk = int(input("Parolanın uzunluğunu girin"))
+
+parola = ""
+
+for i in range(uzunluk):
+    rastgele = random.choice(karakter)
+    parola = parola + rastgele
+
+print("Parolanız:", parola)
